@@ -1,0 +1,19 @@
+{
+  "name": "randpick.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Hope service worker works\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-dude-josh/randpick.github.io.git"
+  },
+  "author": "Joshua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tech-dude-josh/randpick.github.io/issues"
+  },
+  "homepage": "https://github.com/tech-dude-josh/randpick.github.io#readme"
+}

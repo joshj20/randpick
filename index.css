@@ -1,0 +1,460 @@
+@import './cubano.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+body {
+  font-family: 'Cubano', sans-serif;
+  font-style: normal;
+  color: rgb(49, 48, 48);
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #683ffb, #23b873);
+  align-items: center;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Cubano', sans-serif;
+  width: 50%;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.generate {
+  align-self: flex-end;
+  background-color: #683ffb;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Cubano', sans-serif;
+  font-weight: 520;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.generate:hover {
+  opacity: 1;
+}
+
+input {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: 60%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  min-height: 36px;
+  padding: 8px 12px;
+  margin-top: 5px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #404040;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2.5px solid #007bff;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+
+.btn-cssbuttons {
+  --btn-color: #275efe;
+  position: relative;
+  padding: 16px 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-color);
+  border-radius: 24px;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons span,
+.btn-cssbuttons span span {
+  display: inline-flex;
+  vertical-align: middle;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons span {
+  transition-delay: 0.05s;
+}
+
+.btn-cssbuttons span:first-child {
+  padding-right: 7px;
+}
+
+.btn-cssbuttons span span {
+  margin-left: 8px;
+  transition-delay: 0.1s;
+}
+
+.btn-cssbuttons ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateY(-50%);
+}
+
+.btn-cssbuttons ul li {
+  flex: 1;
+}
+
+.btn-cssbuttons ul li a {
+  display: inline-flex;
+  vertical-align: middle;
+  transform: translateY(55px);
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons ul li i {
+  display: inline-flex;
+  vertical-align: middle;
+  transform: translateY(55px);
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons ul li a:hover {
+  opacity: 0.5;
+}
+
+.btn-cssbuttons ul li i:hover {
+  opacity: 1;
+}
+
+.btn-cssbuttons:hover::before {
+  transform: scale(1.2);
+}
+
+.btn-cssbuttons:hover span,
+.btn-cssbuttons:hover span span {
+  transform: translateY(-55px);
+}
+
+.btn-cssbuttons:hover ul li a {
+  transform: translateY(0);
+}
+
+.btn-cssbuttons:hover ul li i {
+  transform: translateY(0);
+}
+
+.btn-cssbuttons:hover ul li:nth-child(1) a {
+  transition-delay: 0.15s;
+}
+
+.btn-cssbuttons:hover ul li:nth-child(2) a {
+  transition-delay: 0.6s;
+}
+
+.btn-cssbuttons:hover ul li:nth-child(3) a {
+  transition-delay: 0.12s;
+}
+
+.border {
+  border-radius: 24px;
+}
+
+.btn1 {
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 1px 5px 2px #bfceef;
+}
+.btn1:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: xx-small;
+  }
+  input {
+    height: auto;
+    font-size: small;
+    width: 30%;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+  .generate {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .btn-cssbuttons {
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: smaller;
+  }
+  h2 {
+    font-size: small;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: x-small;
+  }
+  input {
+    height: auto;
+    font-size: small;
+    width: 50%;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+  .generate {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .btn-cssbuttons {
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: large;
+  }
+  h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: xx-small;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: large;
+  }
+  .container {
+    width: 75%;
+  }
+  input {
+    height: auto;
+    font-size: small;
+    width: 75%;
+  }
+  .generate {
+    font-size: 18px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+  input {
+    height: auto;
+    font-size: large;
+    width: 80%;
+  }
+}
+
+@media (max-width: 745px) {
+  #mobile-tab-visible {
+    visibility: visible;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+}
+
+@media (min-width: 746px) {
+  #mobile-tab-visible {
+    visibility: hidden;
+  }
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.btncopy {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  background-color: #23b873;
+  border-radius: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Cubano', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.2s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+button.btncopy:hover {
+  opacity: 1;
+}
+
+.btn1:active {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

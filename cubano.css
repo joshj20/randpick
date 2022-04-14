@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Cubano';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cubano'), url('https://fonts.cdnfonts.com/s/62904/Cubano.woff') format('woff');
+}
+@font-face {
+    font-family: 'L';
+    font-style: normal;
+    font-weight: 5;
+    src: local('L'), url('https://fonts.cdnfonts.com/s/62904/L Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'O';
+    font-style: normal;
+    font-weight: 5;
+    src: local('O'), url('https://fonts.cdnfonts.com/s/62904/O Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'P';
+    font-style: normal;
+    font-weight: 5;
+    src: local('P'), url('https://fonts.cdnfonts.com/s/62904/P Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'R';
+    font-style: normal;
+    font-weight: 5;
+    src: local('R'), url('https://fonts.cdnfonts.com/s/62904/R Regular.woff') format('woff');
+}
+
