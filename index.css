@@ -1,7 +1,7 @@
 @import './cubano.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 body {
-  font-family: 'Cubano', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: rgb(49, 48, 48);
   text-align: center;
