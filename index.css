@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   color: rgb(49, 48, 48);
   text-align: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   width: 50%;
   min-width: 300px;
   background-color: #ffffff;
@@ -41,7 +41,7 @@ body {
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 520;
   margin: 4px 2px;
   opacity: 0.6;
@@ -59,7 +59,7 @@ body {
 
 input {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   width: 60%;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -108,7 +108,7 @@ input:focus:-ms-input-placeholder {
   --btn-color: #275efe;
   position: relative;
   padding: 16px 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -415,7 +415,7 @@ input:focus:-ms-input-placeholder {
   border-radius: 6px;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 300;
   color: #ffffff;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
